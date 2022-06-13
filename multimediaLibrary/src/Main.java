@@ -15,7 +15,7 @@ public class Main {
 		Book kapital = new Book("Capital: A Critique of Political Economy", "Marx", "Economy", "Non-Fiction");
 		Book distinction = new Book("Distinction: A Social Critique of the Judgement of Taste", "Bourdieu", "Sociology", "Non-Fiction");
 		Book deuxiemeSexe = new Book("The Second Sex", "Simonne de Beauvoir", "Philosophy", "Non-Fiction");
-		//System.out.println(lotr);
+		System.out.println(lotr);
 		
 		Library lib = new Library("Librairie du coin");
 			
