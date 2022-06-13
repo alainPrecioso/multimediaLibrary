@@ -47,7 +47,7 @@ public class Main {
 		Book test = (Book) Serializer.load("dune.ser");
 		System.out.println(test);
 		
-		
+		System.out.println("affichez la phrase")
 	}
 	
 	
