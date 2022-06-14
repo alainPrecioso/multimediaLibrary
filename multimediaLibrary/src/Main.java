@@ -10,12 +10,13 @@ public class Main {
 
 		
 		
-		Library lib = new Library("Librairie du coin");
-		lib.fill();
-		
+//		Library lib = new Library("Librairie du coin");
+//		lib.fill();
+//		System.out.println(lib);
+//		
+//		Ser.saveXML("lib", lib);
 		
 		Library test = (Library) Ser.loadXML("lib.xml");
-		
 		
 		
 		System.out.println(test);
