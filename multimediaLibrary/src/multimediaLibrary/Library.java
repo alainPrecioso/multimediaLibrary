@@ -19,7 +19,7 @@ public class Library implements Serializable {
 
 
 	public void addToLibrary(Media media) {
-		Library.library.add(media);
+		library.add(media);
 	}
 	
 	public String toString() {
@@ -30,7 +30,7 @@ public class Library implements Serializable {
 		return mediaString;
 	}
 	
-	public static void search() {
+	public void search() {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("What are you searching?\n(N)ame\n(A)uthor\n(G)enre\n(T)ype");
 		String input = scan.next().toUpperCase();
@@ -51,7 +51,8 @@ public class Library implements Serializable {
 		
 	}
 	
-	public static void searchName() {
+	
+	public void searchName() {
 		Scanner scan = new Scanner(System.in);
 		//String attribute = scan.next();
 		System.out.println("What name are you searching?");
@@ -65,7 +66,7 @@ public class Library implements Serializable {
 		}
 	}
 	
-	public static void searchAuthor() {
+	public void searchAuthor() {
 		Scanner scan = new Scanner(System.in);
 		//String attribute = scan.next();
 		System.out.println("What name are you searching?");
@@ -79,7 +80,7 @@ public class Library implements Serializable {
 		}
 	}
 	
-	public static void searchGenre() {
+	public void searchGenre() {
 		Scanner scan = new Scanner(System.in);
 		//String attribute = scan.next();
 		System.out.println("What genre are you searching?");
@@ -93,7 +94,7 @@ public class Library implements Serializable {
 		}
 	}
 	
-	public static void searchType() {
+	public void searchType() {
 		Scanner scan = new Scanner(System.in);
 		//String attribute = scan.next();
 		System.out.println("What type are you searching?\n(F)iction\n(N)on-fiction");
@@ -115,8 +116,22 @@ public class Library implements Serializable {
 	
 	
 
-	public void inventory() {
+	public void fill() {
+		Book lotr = new Book("Lord of the Rings", "Tolkien", "Fantasy", "Fiction");
+		Book dune = new Book("Dune", "Herbert", "Scifi", "Fiction");
+		Book foundation = new Book("Foundation", "Asimov", "Scifi", "Fiction");
+		Book ringworld = new Book("Ringworld", "Larry Niven", "Scifi", "Fiction");
+		Book kapital = new Book("Capital: A Critique of Political Economy", "Marx", "Economy", "Non-Fiction");
+		Book distinction = new Book("Distinction: A Social Critique of the Judgement of Taste", "Bourdieu", "Sociology", "Non-Fiction");
+		Book deuxiemeSexe = new Book("The Second Sex", "Simone de Beauvoir", "Philosophy", "Non-Fiction");
 		
+		library.add(lotr);
+		library.add(dune);
+		library.add(foundation);
+		library.add(ringworld);
+		library.add(kapital);
+		library.add(distinction);
+		library.add(deuxiemeSexe);
 	}
 
 
