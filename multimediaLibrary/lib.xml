@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="18.0.1.1" class="java.beans.XMLDecoder">
+ <object class="multimediaLibrary.Library" id="Library0">
+  <void property="library">
+   <void method="add">
+    <object class="multimediaLibrary.Book">
+     <void property="author">
+      <string>Tolkien</string>
+     </void>
+     <void property="genre">
+      <string>Fantasy</string>
+     </void>
+     <void property="name">
+      <string>Lord of the Rings</string>
+     </void>
+     <void property="type">
+      <string>Fiction</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.Book">
+     <void property="author">
+      <string>Herbert</string>
+     </void>
+     <void property="genre">
+      <string>Scifi</string>
+     </void>
+     <void property="name">
+      <string>Dune</string>
+     </void>
+     <void property="type">
+      <string>Fiction</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.Book">
+     <void property="author">
+      <string>Asimov</string>
+     </void>
+     <void property="genre">
+      <string>Scifi</string>
+     </void>
+     <void property="name">
+      <string>Foundation</string>
+     </void>
+     <void property="type">
+      <string>Fiction</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.Book">
+     <void property="author">
+      <string>Larry Niven</string>
+     </void>
+     <void property="genre">
+      <string>Scifi</string>
+     </void>
+     <void property="name">
+      <string>Ringworld</string>
+     </void>
+     <void property="type">
+      <string>Fiction</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.Book">
+     <void property="author">
+      <string>Marx</string>
+     </void>
+     <void property="genre">
+      <string>Economy</string>
+     </void>
+     <void property="name">
+      <string>Capital: A Critique of Political Economy</string>
+     </void>
+     <void property="type">
+      <string>Non-Fiction</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.Book">
+     <void property="author">
+      <string>Bourdieu</string>
+     </void>
+     <void property="genre">
+      <string>Sociology</string>
+     </void>
+     <void property="name">
+      <string>Distinction: A Social Critique of the Judgement of Taste</string>
+     </void>
+     <void property="type">
+      <string>Non-Fiction</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.Book">
+     <void property="author">
+      <string>Simone de Beauvoir</string>
+     </void>
+     <void property="genre">
+      <string>Philosophy</string>
+     </void>
+     <void property="name">
+      <string>The Second Sex</string>
+     </void>
+     <void property="type">
+      <string>Non-Fiction</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="name">
+   <string>Librairie du coin</string>
+  </void>
+ </object>
+</java>

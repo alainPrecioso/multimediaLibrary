@@ -2,7 +2,7 @@ package multimediaLibrary;
 
 
 public class Book extends Media {
-	protected String type;
+	private String type;
 	
 	
 	public Book() {
