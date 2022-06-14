@@ -2,7 +2,7 @@
 import java.io.*;
 
 import multimediaLibrary.*;
-import utils.Serializer;
+import utils.Ser;
 
 public class Main {
 
@@ -13,16 +13,20 @@ public class Main {
 		Library lib = new Library("Librairie du coin");
 		lib.fill();
 		
-		Serializer.save("lib", lib);
+		
+		Library test = (Library) Ser.loadXML("lib.xml");
+		
+		
+		
+		System.out.println(test);
 		
 		
 		
 		
-		Library libSerial = (Library) Serializer.load("lib.ser");
 		
 		
 		
-		lib.search();
+		//lib.search();
 		
 		
 		
