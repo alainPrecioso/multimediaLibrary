@@ -10,6 +10,10 @@ public class Library implements Serializable {
 	String name;
 	
 	
+	public Library() {
+		
+	}
+	
 	
 	public Library(String name) {
 		this.name = name;

@@ -28,7 +28,9 @@ public class Book extends Media {
 		this.type = type;
 	}
 
-	
+	void empty() {
+		
+	}
 	
 	
 	
