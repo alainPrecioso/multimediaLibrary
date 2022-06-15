@@ -58,6 +58,11 @@ public abstract class Media implements Serializable {
 		this.genre = genre;
 	}
 	
+	public String getAuthorName() {
+		return author.substring(author.lastIndexOf(' ')+1);
+		
+	}
+	
 }
 
 

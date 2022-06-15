@@ -52,7 +52,7 @@ public class Library implements Serializable {
 	
 	public String toString() {
 		System.out.println(name);
-		String mediaString = "Name, Author, Type, Genre\n";
+		String mediaString = "Media : Name, Author, Type, Genre\n";
 		for (Media media : library) {
 			mediaString += media + "\n";
 		}
@@ -152,21 +152,25 @@ public class Library implements Serializable {
 	}
 
 	public void fill() {
-		Book lotr = new Book("Lord of the Rings", "Tolkien", "Fantasy", "Fiction");
-		Book dune = new Book("Dune", "Herbert", "Scifi", "Fiction");
-		Book foundation = new Book("Foundation", "Asimov", "Scifi", "Fiction");
+		Book lotr = new Book("The Lord of the Rings", "J.R.R. Tolkien", "Fantasy", "Fiction");
+		Book dune = new Book("Dune", "Frank Herbert", "Scifi", "Fiction");
+		Book foundation = new Book("Foundation", "Isaac Asimov", "Scifi", "Fiction");
 		Book ringworld = new Book("Ringworld", "Larry Niven", "Scifi", "Fiction");
-		Book kapital = new Book("Capital: A Critique of Political Economy", "Marx", "Economy", "Non-Fiction");
-		Book distinction = new Book("Distinction: A Social Critique of the Judgement of Taste", "Bourdieu", "Sociology", "Non-Fiction");
+		Book kapital = new Book("Capital: A Critique of Political Economy", "Karl Marx", "Economy", "Non-Fiction");
+		Book distinction = new Book("Distinction: A Social Critique of the Judgement of Taste", "Pierre Bourdieu", "Sociology", "Non-Fiction");
 		Book deuxiemeSexe = new Book("The Second Sex", "Simone de Beauvoir", "Philosophy", "Non-Fiction");
+		Book hobbit = new Book("The Hobbit", "J.R.R. Tolkien", "Fantasy", "Fiction");
 		
 		library.add(lotr);
 		library.add(dune);
 		library.add(foundation);
 		library.add(ringworld);
 		library.add(kapital);
+		library.add(hobbit);
 		library.add(distinction);
 		library.add(deuxiemeSexe);
+		
+		//library.sortAuthor();
 	}
 
 

@@ -5,13 +5,13 @@
    <void method="add">
     <object class="multimediaLibrary.Book">
      <void property="author">
-      <string>Tolkien</string>
+      <string>J.R.R. Tolkien</string>
      </void>
      <void property="genre">
       <string>Fantasy</string>
      </void>
      <void property="name">
-      <string>Lord of the Rings</string>
+      <string>The Lord of the Rings</string>
      </void>
      <void property="type">
       <string>Fiction</string>
@@ -21,7 +21,7 @@
    <void method="add">
     <object class="multimediaLibrary.Book">
      <void property="author">
-      <string>Herbert</string>
+      <string>Frank Herbert</string>
      </void>
      <void property="genre">
       <string>Scifi</string>
@@ -37,7 +37,7 @@
    <void method="add">
     <object class="multimediaLibrary.Book">
      <void property="author">
-      <string>Asimov</string>
+      <string>Isaac Asimov</string>
      </void>
      <void property="genre">
       <string>Scifi</string>
@@ -69,7 +69,7 @@
    <void method="add">
     <object class="multimediaLibrary.Book">
      <void property="author">
-      <string>Marx</string>
+      <string>Karl Marx</string>
      </void>
      <void property="genre">
       <string>Economy</string>
@@ -85,7 +85,23 @@
    <void method="add">
     <object class="multimediaLibrary.Book">
      <void property="author">
-      <string>Bourdieu</string>
+      <string>J.R.R. Tolkien</string>
+     </void>
+     <void property="genre">
+      <string>Fantasy</string>
+     </void>
+     <void property="name">
+      <string>The Hobbit</string>
+     </void>
+     <void property="type">
+      <string>Fiction</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.Book">
+     <void property="author">
+      <string>Pierre Bourdieu</string>
      </void>
      <void property="genre">
       <string>Sociology</string>
