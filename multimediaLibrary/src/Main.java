@@ -15,11 +15,10 @@ public class Main {
 //		
 //		Ser.saveXML("lib", lib);
 		
-		Library test = (Library) Ser.loadXML("lib.xml");
+		Library test = (Library) Ser.load("lib.xml");
 		
 		
-		System.out.println(test);
-		
+		System.out.println("test");
 		
 		
 		

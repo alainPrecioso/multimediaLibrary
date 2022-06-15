@@ -6,23 +6,27 @@ import java.io.*;
 
 public class Ser {
 
-	public static void save(String fileName, Object object) throws IOException {
-		fileName += ".ser";
-		FileOutputStream fileOut = new FileOutputStream(fileName);
-		ObjectOutputStream out = new ObjectOutputStream(fileOut);
-		out.writeObject(object);
-		out.close();
-		fileOut.close();
+	public static void save(String fileName, Object object) {
+		try {
+			saveXML(fileName, object);
+		} catch (IOException e) {
+			//e.printStackTrace();
+			System.out.println("error");
+		}
+		
 	}
 	
-	public static Object load(String path) throws IOException, ClassNotFoundException {
+	public static Object load(String path) {
 		Object serial = null;
-		FileInputStream fileIn = new FileInputStream(path);
-		ObjectInputStream in = new ObjectInputStream(fileIn);
-		
-		serial = (Object) in.readObject();
-		in.close();
-		fileIn.close();
+		try {
+			serial = loadXML(path);
+		} catch (ClassNotFoundException e) {
+			System.out.println("error");
+			//e.printStackTrace();
+		} catch (IOException e) {
+			System.out.println("file not found");
+			//e.printStackTrace();
+		}
 		return serial;
 	}
 	
