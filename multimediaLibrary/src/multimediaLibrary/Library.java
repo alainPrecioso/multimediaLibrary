@@ -161,6 +161,10 @@ public class Library implements Serializable {
 		Book deuxiemeSexe = new Book("The Second Sex", "Simone de Beauvoir", "Philosophy", "Non-Fiction");
 		Book hobbit = new Book("The Hobbit", "J.R.R. Tolkien", "Fantasy", "Fiction");
 		
+		CompactDisk test = new CompactDisk("SGF" , "SGH" , "fdh" , 13);
+		
+		
+		library.add(test);
 		library.add(lotr);
 		library.add(dune);
 		library.add(foundation);
@@ -170,7 +174,7 @@ public class Library implements Serializable {
 		library.add(distinction);
 		library.add(deuxiemeSexe);
 		
-		//library.sortAuthor();
+		Collections.sort(library, new AuthorComparator());
 	}
 
 

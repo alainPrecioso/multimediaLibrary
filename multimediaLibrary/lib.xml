@@ -5,38 +5,6 @@
    <void method="add">
     <object class="multimediaLibrary.Book">
      <void property="author">
-      <string>J.R.R. Tolkien</string>
-     </void>
-     <void property="genre">
-      <string>Fantasy</string>
-     </void>
-     <void property="name">
-      <string>The Lord of the Rings</string>
-     </void>
-     <void property="type">
-      <string>Fiction</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="multimediaLibrary.Book">
-     <void property="author">
-      <string>Frank Herbert</string>
-     </void>
-     <void property="genre">
-      <string>Scifi</string>
-     </void>
-     <void property="name">
-      <string>Dune</string>
-     </void>
-     <void property="type">
-      <string>Fiction</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="multimediaLibrary.Book">
-     <void property="author">
       <string>Isaac Asimov</string>
      </void>
      <void property="genre">
@@ -53,13 +21,45 @@
    <void method="add">
     <object class="multimediaLibrary.Book">
      <void property="author">
-      <string>Larry Niven</string>
+      <string>Simone de Beauvoir</string>
+     </void>
+     <void property="genre">
+      <string>Philosophy</string>
+     </void>
+     <void property="name">
+      <string>The Second Sex</string>
+     </void>
+     <void property="type">
+      <string>Non-Fiction</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.Book">
+     <void property="author">
+      <string>Pierre Bourdieu</string>
+     </void>
+     <void property="genre">
+      <string>Sociology</string>
+     </void>
+     <void property="name">
+      <string>Distinction: A Social Critique of the Judgement of Taste</string>
+     </void>
+     <void property="type">
+      <string>Non-Fiction</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.Book">
+     <void property="author">
+      <string>Frank Herbert</string>
      </void>
      <void property="genre">
       <string>Scifi</string>
      </void>
      <void property="name">
-      <string>Ringworld</string>
+      <string>Dune</string>
      </void>
      <void property="type">
       <string>Fiction</string>
@@ -85,6 +85,38 @@
    <void method="add">
     <object class="multimediaLibrary.Book">
      <void property="author">
+      <string>Larry Niven</string>
+     </void>
+     <void property="genre">
+      <string>Scifi</string>
+     </void>
+     <void property="name">
+      <string>Ringworld</string>
+     </void>
+     <void property="type">
+      <string>Fiction</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.CompactDisk">
+     <void property="author">
+      <string>SGH</string>
+     </void>
+     <void property="genre">
+      <string>fdh</string>
+     </void>
+     <void property="name">
+      <string>SGF</string>
+     </void>
+     <void property="tracks">
+      <int>13</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.Book">
+     <void property="author">
       <string>J.R.R. Tolkien</string>
      </void>
      <void property="genre">
@@ -101,32 +133,16 @@
    <void method="add">
     <object class="multimediaLibrary.Book">
      <void property="author">
-      <string>Pierre Bourdieu</string>
+      <string>J.R.R. Tolkien</string>
      </void>
      <void property="genre">
-      <string>Sociology</string>
+      <string>Fantasy</string>
      </void>
      <void property="name">
-      <string>Distinction: A Social Critique of the Judgement of Taste</string>
+      <string>The Lord of the Rings</string>
      </void>
      <void property="type">
-      <string>Non-Fiction</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="multimediaLibrary.Book">
-     <void property="author">
-      <string>Simone de Beauvoir</string>
-     </void>
-     <void property="genre">
-      <string>Philosophy</string>
-     </void>
-     <void property="name">
-      <string>The Second Sex</string>
-     </void>
-     <void property="type">
-      <string>Non-Fiction</string>
+      <string>Fiction</string>
      </void>
     </object>
    </void>

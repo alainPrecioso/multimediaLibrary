@@ -10,19 +10,18 @@ public class Main {
 		
 		Library lib = new Library("Librairie du coin");
 		lib.fill();
-		System.out.println(lib);
 		
 		Ser.saveXML("lib", lib);
 		
 		Library test = (Library) Ser.load("lib.xml");
 		
 		
-		test.sortAuthor();
-		
 		System.out.println(test);
+//		test.sortAuthor();
+//		System.out.println(test);
 		
-		
-		
+		Class<? extends Media> a = test.get(1).getClass();
+		System.out.println(a);
 		
 		
 		
