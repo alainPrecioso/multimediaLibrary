@@ -20,12 +20,9 @@ public class Main {
 //		test.sortAuthor();
 //		System.out.println(test);
 		
-		Class<? extends Media> a = test.get(1).getClass();
-		System.out.println(a);
 		
 		
-		
-		//test.search();
+		test.search();
 		
 		
 		

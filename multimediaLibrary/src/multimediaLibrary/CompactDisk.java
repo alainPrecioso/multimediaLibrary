@@ -2,33 +2,35 @@ package multimediaLibrary;
 
 public class CompactDisk extends Media {
 	
-	private int tracks;
+	private String length;
+	private int releaseYear;
 	
 	public CompactDisk() {
 		super();
 	}
 	
 
-	public CompactDisk(String name, String author, String genre, Integer tracks) {
+	public CompactDisk(String name, String author, String genre, String length, Integer releaseYear) {
 		super(name, author, genre);
-		this.tracks = tracks;
+		this.length = length;
+		this.releaseYear = releaseYear;
 		// TODO Auto-generated constructor stub
 	}
 
 
-	public int getTracks() {
-		return tracks;
+	public String getLength() {
+		return length;
 	}
 
 
-	public void setTracks(int tracks) {
-		this.tracks = tracks;
+	public void setLength(String length) {
+		this.length = length;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Compact Disk : " + name + ", " + author + ", " + genre + ", " + tracks +" tracks";
+		return "Compact Disk : " + name + ", " + author + ", " + genre + ", " + releaseYear + ", " + length;
 	}
 	
 	

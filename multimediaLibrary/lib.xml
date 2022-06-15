@@ -99,22 +99,6 @@
     </object>
    </void>
    <void method="add">
-    <object class="multimediaLibrary.CompactDisk">
-     <void property="author">
-      <string>SGH</string>
-     </void>
-     <void property="genre">
-      <string>fdh</string>
-     </void>
-     <void property="name">
-      <string>SGF</string>
-     </void>
-     <void property="tracks">
-      <int>13</int>
-     </void>
-    </object>
-   </void>
-   <void method="add">
     <object class="multimediaLibrary.Book">
      <void property="author">
       <string>J.R.R. Tolkien</string>
@@ -143,6 +127,70 @@
      </void>
      <void property="type">
       <string>Fiction</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.CompactDisk">
+     <void property="author">
+      <string>AC/DC</string>
+     </void>
+     <void property="genre">
+      <string>Hard Rock</string>
+     </void>
+     <void property="length">
+      <string>42:11</string>
+     </void>
+     <void property="name">
+      <string>Back in Black</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.CompactDisk">
+     <void property="author">
+      <string>Pink Floyd</string>
+     </void>
+     <void property="genre">
+      <string>Progressive Rock</string>
+     </void>
+     <void property="length">
+      <string>43:09</string>
+     </void>
+     <void property="name">
+      <string>The Dark Side of the Moon</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.CompactDisk">
+     <void property="author">
+      <string>Michael Jackson</string>
+     </void>
+     <void property="genre">
+      <string>Pop</string>
+     </void>
+     <void property="length">
+      <string>42:16</string>
+     </void>
+     <void property="name">
+      <string>Thriller</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.CompactDisk">
+     <void property="author">
+      <string>Led Zeppelin</string>
+     </void>
+     <void property="genre">
+      <string>Hard Rock</string>
+     </void>
+     <void property="length">
+      <string>42:20</string>
+     </void>
+     <void property="name">
+      <string>Led Zeppelin IV</string>
      </void>
     </object>
    </void>

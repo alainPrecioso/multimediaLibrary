@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 import utils.AuthorComparator;
+import utils.ClassComparator;
 import utils.NameComparator;
 
 public class Library implements Serializable {
@@ -142,6 +143,9 @@ public class Library implements Serializable {
 			}
 		}
 	}
+	public void sort() {
+		Collections.sort(library, new ClassComparator());
+	}
 	
 	public void sortName() {
 		Collections.sort(library, new NameComparator());
@@ -152,29 +156,21 @@ public class Library implements Serializable {
 	}
 
 	public void fill() {
-		Book lotr = new Book("The Lord of the Rings", "J.R.R. Tolkien", "Fantasy", "Fiction");
-		Book dune = new Book("Dune", "Frank Herbert", "Scifi", "Fiction");
-		Book foundation = new Book("Foundation", "Isaac Asimov", "Scifi", "Fiction");
-		Book ringworld = new Book("Ringworld", "Larry Niven", "Scifi", "Fiction");
-		Book kapital = new Book("Capital: A Critique of Political Economy", "Karl Marx", "Economy", "Non-Fiction");
-		Book distinction = new Book("Distinction: A Social Critique of the Judgement of Taste", "Pierre Bourdieu", "Sociology", "Non-Fiction");
-		Book deuxiemeSexe = new Book("The Second Sex", "Simone de Beauvoir", "Philosophy", "Non-Fiction");
-		Book hobbit = new Book("The Hobbit", "J.R.R. Tolkien", "Fantasy", "Fiction");
+		library.add(new Book("The Lord of the Rings", "J.R.R. Tolkien", "Fantasy", "Fiction"));
+		library.add(new Book("Dune", "Frank Herbert", "Scifi", "Fiction"));
+		library.add(new Book("Foundation", "Isaac Asimov", "Scifi", "Fiction"));
+		library.add(new Book("Ringworld", "Larry Niven", "Scifi", "Fiction"));
+		library.add(new Book("Capital: A Critique of Political Economy", "Karl Marx", "Economy", "Non-Fiction"));
+		library.add(new Book("The Hobbit", "J.R.R. Tolkien", "Fantasy", "Fiction"));
+		library.add(new Book("Distinction: A Social Critique of the Judgement of Taste", "Pierre Bourdieu", "Sociology", "Non-Fiction"));
+		library.add(new Book("The Second Sex", "Simone de Beauvoir", "Philosophy", "Non-Fiction"));
+		library.add(new CompactDisk("Thriller" , "Michael Jackson" , "Pop" , "42:16", 1982));
+		library.add(new CompactDisk("Back in Black" , "AC/DC" , "Hard Rock" , "42:11", 1980));
+		library.add(new CompactDisk("The Dark Side of the Moon" , "Pink Floyd" , "Progressive Rock" , "43:09", 1973 ));
+		library.add(new CompactDisk("Led Zeppelin IV" , "Led Zeppelin" , "Hard Rock" , "42:20", 1971));
 		
-		CompactDisk test = new CompactDisk("SGF" , "SGH" , "fdh" , 13);
 		
-		
-		library.add(test);
-		library.add(lotr);
-		library.add(dune);
-		library.add(foundation);
-		library.add(ringworld);
-		library.add(kapital);
-		library.add(hobbit);
-		library.add(distinction);
-		library.add(deuxiemeSexe);
-		
-		Collections.sort(library, new AuthorComparator());
+		Collections.sort(library, new ClassComparator());
 	}
 
 
