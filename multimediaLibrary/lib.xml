@@ -7,6 +7,9 @@
      <void property="author">
       <string>Isaac Asimov</string>
      </void>
+     <void property="familyName">
+      <boolean>true</boolean>
+     </void>
      <void property="genre">
       <string>Scifi</string>
      </void>
@@ -22,6 +25,9 @@
     <object class="multimediaLibrary.Book">
      <void property="author">
       <string>Simone de Beauvoir</string>
+     </void>
+     <void property="familyName">
+      <boolean>true</boolean>
      </void>
      <void property="genre">
       <string>Philosophy</string>
@@ -39,6 +45,9 @@
      <void property="author">
       <string>Pierre Bourdieu</string>
      </void>
+     <void property="familyName">
+      <boolean>true</boolean>
+     </void>
      <void property="genre">
       <string>Sociology</string>
      </void>
@@ -54,6 +63,9 @@
     <object class="multimediaLibrary.Book">
      <void property="author">
       <string>Frank Herbert</string>
+     </void>
+     <void property="familyName">
+      <boolean>true</boolean>
      </void>
      <void property="genre">
       <string>Scifi</string>
@@ -71,6 +83,9 @@
      <void property="author">
       <string>Karl Marx</string>
      </void>
+     <void property="familyName">
+      <boolean>true</boolean>
+     </void>
      <void property="genre">
       <string>Economy</string>
      </void>
@@ -86,6 +101,9 @@
     <object class="multimediaLibrary.Book">
      <void property="author">
       <string>Larry Niven</string>
+     </void>
+     <void property="familyName">
+      <boolean>true</boolean>
      </void>
      <void property="genre">
       <string>Scifi</string>
@@ -103,6 +121,9 @@
      <void property="author">
       <string>J.R.R. Tolkien</string>
      </void>
+     <void property="familyName">
+      <boolean>true</boolean>
+     </void>
      <void property="genre">
       <string>Fantasy</string>
      </void>
@@ -118,6 +139,9 @@
     <object class="multimediaLibrary.Book">
      <void property="author">
       <string>J.R.R. Tolkien</string>
+     </void>
+     <void property="familyName">
+      <boolean>true</boolean>
      </void>
      <void property="genre">
       <string>Fantasy</string>
@@ -135,6 +159,9 @@
      <void property="author">
       <string>AC/DC</string>
      </void>
+     <void property="familyName">
+      <boolean>false</boolean>
+     </void>
      <void property="genre">
       <string>Hard Rock</string>
      </void>
@@ -149,23 +176,10 @@
    <void method="add">
     <object class="multimediaLibrary.CompactDisk">
      <void property="author">
-      <string>Pink Floyd</string>
-     </void>
-     <void property="genre">
-      <string>Progressive Rock</string>
-     </void>
-     <void property="length">
-      <string>43:09</string>
-     </void>
-     <void property="name">
-      <string>The Dark Side of the Moon</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="multimediaLibrary.CompactDisk">
-     <void property="author">
       <string>Michael Jackson</string>
+     </void>
+     <void property="familyName">
+      <boolean>true</boolean>
      </void>
      <void property="genre">
       <string>Pop</string>
@@ -183,6 +197,9 @@
      <void property="author">
       <string>Led Zeppelin</string>
      </void>
+     <void property="familyName">
+      <boolean>false</boolean>
+     </void>
      <void property="genre">
       <string>Hard Rock</string>
      </void>
@@ -191,6 +208,25 @@
      </void>
      <void property="name">
       <string>Led Zeppelin IV</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="multimediaLibrary.CompactDisk">
+     <void property="author">
+      <string>Pink Floyd</string>
+     </void>
+     <void property="familyName">
+      <boolean>false</boolean>
+     </void>
+     <void property="genre">
+      <string>Progressive Rock</string>
+     </void>
+     <void property="length">
+      <string>43:09</string>
+     </void>
+     <void property="name">
+      <string>The Dark Side of the Moon</string>
      </void>
     </object>
    </void>

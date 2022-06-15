@@ -16,6 +16,13 @@ public class CompactDisk extends Media {
 		this.releaseYear = releaseYear;
 		// TODO Auto-generated constructor stub
 	}
+	
+	public CompactDisk(Boolean familyName, String name, String author, String genre, String length, Integer releaseYear) {
+		super(familyName, name, author, genre);
+		this.length = length;
+		this.releaseYear = releaseYear;
+		// TODO Auto-generated constructor stub
+	}
 
 
 	public String getLength() {

@@ -7,17 +7,35 @@ public abstract class Media implements Serializable {
 	protected String name; //
 	protected String author;
 	protected String genre;
+	protected Boolean familyName;
 	
+
 	public Media() {
 		
 	}
 	
-	public Media(String name, String author, String genre) {
+	public Media(Boolean familyName, String name, String author, String genre) {
+		this.familyName = familyName;
 		this.name = name;
 		this.author = author;
 		this.genre = genre;
 	}
 	
+	public Media(String name, String author, String genre) {
+		this.familyName = false;
+		this.name = name;
+		this.author = author;
+		this.genre = genre;
+	}
+	
+
+	public Boolean getFamilyName() {
+		return familyName;
+	}
+
+	public void setFamilyName(Boolean familyName) {
+		this.familyName = familyName;
+	}
 	
 	
 	public String getName() {
@@ -59,7 +77,10 @@ public abstract class Media implements Serializable {
 	}
 	
 	public String getAuthorName() {
-		return author.substring(author.lastIndexOf(' ')+1);
+		if (getFamilyName() == true) {
+			return author.substring(author.lastIndexOf(' ')+1);
+		}
+		return author;
 		
 	}
 	

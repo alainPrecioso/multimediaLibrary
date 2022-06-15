@@ -156,15 +156,15 @@ public class Library implements Serializable {
 	}
 
 	public void fill() {
-		library.add(new Book("The Lord of the Rings", "J.R.R. Tolkien", "Fantasy", "Fiction"));
-		library.add(new Book("Dune", "Frank Herbert", "Scifi", "Fiction"));
-		library.add(new Book("Foundation", "Isaac Asimov", "Scifi", "Fiction"));
-		library.add(new Book("Ringworld", "Larry Niven", "Scifi", "Fiction"));
-		library.add(new Book("Capital: A Critique of Political Economy", "Karl Marx", "Economy", "Non-Fiction"));
-		library.add(new Book("The Hobbit", "J.R.R. Tolkien", "Fantasy", "Fiction"));
-		library.add(new Book("Distinction: A Social Critique of the Judgement of Taste", "Pierre Bourdieu", "Sociology", "Non-Fiction"));
-		library.add(new Book("The Second Sex", "Simone de Beauvoir", "Philosophy", "Non-Fiction"));
-		library.add(new CompactDisk("Thriller" , "Michael Jackson" , "Pop" , "42:16", 1982));
+		library.add(new Book(true, "The Lord of the Rings", "J.R.R. Tolkien", "Fantasy", "Fiction"));
+		library.add(new Book(true, "Dune", "Frank Herbert", "Scifi", "Fiction"));
+		library.add(new Book(true, "Foundation", "Isaac Asimov", "Scifi", "Fiction"));
+		library.add(new Book(true, "Ringworld", "Larry Niven", "Scifi", "Fiction"));
+		library.add(new Book(true, "Capital: A Critique of Political Economy", "Karl Marx", "Economy", "Non-Fiction"));
+		library.add(new Book(true, "The Hobbit", "J.R.R. Tolkien", "Fantasy", "Fiction"));
+		library.add(new Book(true, "Distinction: A Social Critique of the Judgement of Taste", "Pierre Bourdieu", "Sociology", "Non-Fiction"));
+		library.add(new Book(true, "The Second Sex", "Simone de Beauvoir", "Philosophy", "Non-Fiction"));
+		library.add(new CompactDisk(true, "Thriller" , "Michael Jackson" , "Pop" , "42:16", 1982));
 		library.add(new CompactDisk("Back in Black" , "AC/DC" , "Hard Rock" , "42:11", 1980));
 		library.add(new CompactDisk("The Dark Side of the Moon" , "Pink Floyd" , "Progressive Rock" , "43:09", 1973 ));
 		library.add(new CompactDisk("Led Zeppelin IV" , "Led Zeppelin" , "Hard Rock" , "42:20", 1971));

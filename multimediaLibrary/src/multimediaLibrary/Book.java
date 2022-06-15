@@ -12,7 +12,11 @@ public class Book extends Media {
 	public Book(String name, String author, String genre, String type) {
 		super(name, author, genre);
 		this.type = type;
-		// TODO Auto-generated constructor stub
+	}
+	
+	public Book(Boolean familyName, String name, String author, String genre, String type) {
+		super(familyName, name, author, genre);
+		this.type = type;
 	}
 
 	public String toString() {
