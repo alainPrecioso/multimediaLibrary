@@ -2,7 +2,11 @@ package multimediaLibrary;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
+
+import utils.AuthorComparator;
+import utils.NameComparator;
 
 public class Library implements Serializable {
 	
@@ -139,7 +143,13 @@ public class Library implements Serializable {
 		}
 	}
 	
+	public void sortName() {
+		Collections.sort(library, new NameComparator());
+	}
 	
+	public void sortAuthor() {
+		Collections.sort(library, new AuthorComparator());
+	}
 
 	public void fill() {
 		Book lotr = new Book("Lord of the Rings", "Tolkien", "Fantasy", "Fiction");

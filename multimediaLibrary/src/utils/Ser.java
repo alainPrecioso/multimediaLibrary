@@ -21,10 +21,10 @@ public class Ser {
 		try {
 			serial = loadXML(path);
 		} catch (ClassNotFoundException e) {
-			System.out.println("error");
+			System.out.println("Class not compatible");
 			//e.printStackTrace();
 		} catch (IOException e) {
-			System.out.println("file not found");
+			System.out.println("File not found");
 			//e.printStackTrace();
 		}
 		return serial;

@@ -57,6 +57,7 @@ public abstract class Media implements Serializable {
 	public void setGenre(String genre) {
 		this.genre = genre;
 	}
+	
 }
 
 

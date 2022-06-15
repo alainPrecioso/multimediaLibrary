@@ -1,5 +1,4 @@
 import java.io.*;
-
 import multimediaLibrary.*;
 import utils.Ser;
 
@@ -18,7 +17,9 @@ public class Main {
 		Library test = (Library) Ser.load("lib.xml");
 		
 		
-		System.out.println("test");
+		test.sortAuthor();
+		
+		System.out.println(test);
 		
 		
 		
