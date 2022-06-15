@@ -1,7 +1,7 @@
 package multimediaLibrary;
 
 import java.io.Serializable;
-
+@SuppressWarnings(value = { "serial" }) 
 public abstract class Media implements Serializable {
 	//attributes or fields
 	protected String name; //

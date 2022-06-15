@@ -1,9 +1,9 @@
 package multimediaLibrary;
-
+@SuppressWarnings(value = { "serial" }) 
 public class CompactDisk extends Media {
 	
 	private String length;
-	private int releaseYear;
+	private Integer releaseYear;
 	
 	public CompactDisk() {
 		super();
@@ -22,6 +22,16 @@ public class CompactDisk extends Media {
 		this.length = length;
 		this.releaseYear = releaseYear;
 		// TODO Auto-generated constructor stub
+	}
+
+
+	public Integer getReleaseYear() {
+		return releaseYear;
+	}
+
+
+	public void setReleaseYear(Integer releaseYear) {
+		this.releaseYear = releaseYear;
 	}
 
 

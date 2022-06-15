@@ -171,6 +171,9 @@
      <void property="name">
       <string>Back in Black</string>
      </void>
+     <void property="releaseYear">
+      <int>1980</int>
+     </void>
     </object>
    </void>
    <void method="add">
@@ -189,6 +192,9 @@
      </void>
      <void property="name">
       <string>Thriller</string>
+     </void>
+     <void property="releaseYear">
+      <int>1982</int>
      </void>
     </object>
    </void>
@@ -209,6 +215,9 @@
      <void property="name">
       <string>Led Zeppelin IV</string>
      </void>
+     <void property="releaseYear">
+      <int>1971</int>
+     </void>
     </object>
    </void>
    <void method="add">
@@ -227,6 +236,9 @@
      </void>
      <void property="name">
       <string>The Dark Side of the Moon</string>
+     </void>
+     <void property="releaseYear">
+      <int>1973</int>
      </void>
     </object>
    </void>

@@ -1,6 +1,6 @@
 package multimediaLibrary;
 
-
+@SuppressWarnings(value = { "serial" }) 
 public class Book extends Media {
 	private String type;
 	

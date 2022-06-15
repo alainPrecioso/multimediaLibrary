@@ -8,7 +8,7 @@ import java.util.Scanner;
 import utils.AuthorComparator;
 import utils.ClassComparator;
 import utils.NameComparator;
-
+@SuppressWarnings(value = { "serial" }) 
 public class Library implements Serializable {
 	
 	private ArrayList<Media> library = new ArrayList<Media>();
@@ -78,7 +78,7 @@ public class Library implements Serializable {
 			searchType();
 			break;
 		}
-		
+		scan.close();
 	}
 	
 	
@@ -94,6 +94,7 @@ public class Library implements Serializable {
 				System.out.println(media);
 			}
 		}
+		scan.close();
 	}
 	
 	public void searchAuthor() {
@@ -108,6 +109,7 @@ public class Library implements Serializable {
 				System.out.println(media);
 			}
 		}
+		scan.close();
 	}
 	
 	public void searchGenre() {
@@ -122,6 +124,7 @@ public class Library implements Serializable {
 				System.out.println(media);
 			}
 		}
+		scan.close();
 	}
 	
 	public void searchType() {
@@ -142,45 +145,47 @@ public class Library implements Serializable {
 				System.out.println(media);
 			}
 		}
+		scan.close();
 	}
+	
+	
 	public void sort() {
 		Collections.sort(library, new ClassComparator());
 	}
+	
 	
 	public void sortName() {
 		Collections.sort(library, new NameComparator());
 	}
 	
+	
 	public void sortAuthor() {
 		Collections.sort(library, new AuthorComparator());
 	}
+	
 
 	public void fill() {
 		library.add(new Book(true, "The Lord of the Rings", "J.R.R. Tolkien", "Fantasy", "Fiction"));
 		library.add(new Book(true, "Dune", "Frank Herbert", "Scifi", "Fiction"));
 		library.add(new Book(true, "Foundation", "Isaac Asimov", "Scifi", "Fiction"));
+		library.add(new CompactDisk(true, "Thriller" , "Michael Jackson" , "Pop" , "42:16", 1982));
+		library.add(new CompactDisk("Back in Black" , "AC/DC" , "Hard Rock" , "42:11", 1980));
+		library.add(new CompactDisk("The Dark Side of the Moon" , "Pink Floyd" , "Progressive Rock" , "43:09", 1973 ));
+		library.add(new CompactDisk("Led Zeppelin IV" , "Led Zeppelin" , "Hard Rock" , "42:20", 1971));
 		library.add(new Book(true, "Ringworld", "Larry Niven", "Scifi", "Fiction"));
 		library.add(new Book(true, "Capital: A Critique of Political Economy", "Karl Marx", "Economy", "Non-Fiction"));
 		library.add(new Book(true, "The Hobbit", "J.R.R. Tolkien", "Fantasy", "Fiction"));
 		library.add(new Book(true, "Distinction: A Social Critique of the Judgement of Taste", "Pierre Bourdieu", "Sociology", "Non-Fiction"));
 		library.add(new Book(true, "The Second Sex", "Simone de Beauvoir", "Philosophy", "Non-Fiction"));
-		library.add(new CompactDisk(true, "Thriller" , "Michael Jackson" , "Pop" , "42:16", 1982));
-		library.add(new CompactDisk("Back in Black" , "AC/DC" , "Hard Rock" , "42:11", 1980));
-		library.add(new CompactDisk("The Dark Side of the Moon" , "Pink Floyd" , "Progressive Rock" , "43:09", 1973 ));
-		library.add(new CompactDisk("Led Zeppelin IV" , "Led Zeppelin" , "Hard Rock" , "42:20", 1971));
+		
 		
 		
 		Collections.sort(library, new ClassComparator());
 	}
-
-
 
 
 	public Media get(int i) {
 		
 		return library.get(i);
 	}
-	
-	
-	
 }
