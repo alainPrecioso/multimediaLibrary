@@ -6,6 +6,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import multimediaLibrary.Library;
+import multimediaLibrary.Media;
 import utils.Ser;
 
 import javax.swing.JList;
@@ -13,14 +14,22 @@ import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextPane;
+import javax.swing.JTextArea;
+import javax.swing.JLabel;
 
+@SuppressWarnings("serial")
 public class LibraryFrame extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
-	private final JButton btnNewButton = new JButton("Search");
-
+	private final JButton searchButton = new JButton("Search");
+	private JTextArea searchResults;
+	JComboBox comboBox;
+	
+	
 	/**
 	 * Launch the application.
 	 */
@@ -48,24 +57,58 @@ public class LibraryFrame extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JList list = new JList();
-		list.setBounds(10, 10, 416, 195);
-		contentPane.add(list);
 		
 		textField = new JTextField();
 		textField.setBounds(10, 234, 96, 19);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		JComboBox comboBox = new JComboBox();
-		comboBox.setBounds(116, 233, 29, 21);
+		
+		String[] combo = { "Title", "Author" };
+		comboBox = new JComboBox(combo);
+		comboBox.setBounds(116, 233, 67, 21);
 		contentPane.add(comboBox);
-		btnNewButton.addActionListener(new ActionListener() {
+		
+		
+		
+		searchButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				searchResults.removeAll();
+				Library lib = (Library) Ser.load("lib.xml");
+				
+				String select = (String) comboBox.getSelectedItem();
+				if (select.equals("Title")) {
+					select = "N";
+				}
+				if (select.equals("Author")) {
+					select = "A";
+				}
+				
+				
+				ArrayList<Media> searchList = lib.search(select, textField.getText());
+				
+				//searchResults.setText("Results :");
+				
+				for (Media media : searchList) {
+					searchResults.append(media.toString()+ "\n");
+				}
+				
+				
+				
 			}
 		});
-		btnNewButton.setBounds(155, 234, 106, 19);
-		contentPane.add(btnNewButton);
+		searchButton.setBounds(193, 234, 106, 19);
+		contentPane.add(searchButton);
+		
+		searchResults = new JTextArea();
+		searchResults.setBounds(10, 10, 416, 214);
+		contentPane.add(searchResults);
+		
+		
+		
+		
+		
+		
 	}
 	public Library makeLibrary(){
 		Library lib = new Library("Librairie du coin");
