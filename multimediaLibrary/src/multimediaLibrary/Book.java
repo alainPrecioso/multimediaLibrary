@@ -20,8 +20,7 @@ public class Book extends Media {
 	}
 
 	public String toString() {
-		String media  ="Book : " + name + ", " + author + ", " + type + ", " + genre;
-		return media;
+		return "Book : " + name + ", " + author + ", " + type + ", " + genre;
 	}
 
 	public String getType() {

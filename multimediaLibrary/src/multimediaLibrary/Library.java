@@ -60,92 +60,131 @@ public class Library implements Serializable {
 		return mediaString;
 	}
 	
-	public void search() {
-		Scanner scan = new Scanner(System.in);
-		System.out.println("What are you searching?\n(N)ame\n(A)uthor\n(G)enre\n(T)ype");
-		String input = scan.next().toUpperCase();
+	public ArrayList<Media> search(String input, String search) {
+		ArrayList<Media> list = new ArrayList<Media>();
 		switch (input) {
 		case "N" :
-			searchName();
+			searchName(search, list);
+			return list;
+		case "A" :
+			searchAuthor(search, list);
+			return list;
+		case "G" :
+			searchGenre(search, list);
+			return list;
+		case "T" :
+			searchType(search, list);
+			return list;
+		}
+		return list;
+		
+	}
+	
+	public void searchScan() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("What are you searching?\n(N)ame\n(A)uthor\n(G)enre\n(T)ype");
+		ArrayList<Media> list = new ArrayList<Media>();
+		switch (scan.next().toUpperCase()) {
+		case "N" :
+			searchNameScan(list);
 			break;
 		case "A" :
-			searchAuthor();
+			searchAuthorScan(list);
 			break;
 		case "G" :
-			searchGenre();
+			searchGenreScan(list);
 			break;
 		case "T" :
-			searchType();
+			searchTypeScan(list);
 			break;
 		}
 		scan.close();
+		
+		for (Media media : list) {
+			System.out.println(media);
+		}
+		
 	}
 	
 	
-	public void searchName() {
+	public ArrayList<Media> searchName(String name, ArrayList<Media> list) {
+		for (Media media : library) {
+			if (media.getName().toLowerCase().contains(name.toLowerCase()) ) {
+				list.add(media);
+			}
+		}
+		return list;
+	}
+	
+	public ArrayList<Media> searchNameScan(ArrayList<Media> list) {
 		Scanner scan = new Scanner(System.in);
 		//String attribute = scan.next();
 		System.out.println("What name are you searching?");
-		String variable = scan.next();
-		
-		
-		for (Media media : library) {
-			if (media.getName().toLowerCase().contains(variable.toLowerCase()) ) {
-				System.out.println(media);
-			}
-		}
+		searchName(scan.next(), list);
 		scan.close();
+		return list;
 	}
 	
-	public void searchAuthor() {
+	public ArrayList<Media> searchAuthor(String author, ArrayList<Media> list) {
+		for (Media media : library) {
+			if (media.getAuthor().toLowerCase().contains(author.toLowerCase()) ) {
+				list.add(media);
+			}
+		}
+		return list;
+	}
+	
+	public ArrayList<Media> searchAuthorScan(ArrayList<Media> list) {
 		Scanner scan = new Scanner(System.in);
 		//String attribute = scan.next();
 		System.out.println("What name are you searching?");
-		String variable = scan.next();
-		
-		
-		for (Media media : library) {
-			if (media.getAuthor().toLowerCase().contains(variable.toLowerCase()) ) {
-				System.out.println(media);
-			}
-		}
+		searchAuthor(scan.next(), list);
 		scan.close();
+		return list;
 	}
 	
-	public void searchGenre() {
+	public ArrayList<Media> searchGenre(String genre, ArrayList<Media> list) {
+		for (Media media : library) {
+			if (media.getGenre().equals(genre) ) {
+				list.add(media);
+			}
+		}
+		return list;
+	}
+	
+	public ArrayList<Media> searchGenreScan(ArrayList<Media> list) {
 		Scanner scan = new Scanner(System.in);
 		//String attribute = scan.next();
 		System.out.println("What genre are you searching?");
-		String variable = scan.next();
-		
-		
-		for (Media media : library) {
-			if (media.getGenre().equals(variable) ) {
-				System.out.println(media);
-			}
-		}
+		searchGenre(scan.next(), list);
 		scan.close();
+		return list;
 	}
 	
-	public void searchType() {
+	public ArrayList<Media> searchType(String type, ArrayList<Media> list) {
+		switch (type) {
+			case "F":
+				type = "Fiction";
+				break;
+			case "N":
+				type = "Non-fiction";
+				break;
+		}
+		for (Media media : library) {
+			if (media.getType().equals(type) ) {
+				list.add(media);
+			}
+		}
+		return list;
+	}
+	
+	public ArrayList<Media> searchTypeScan(ArrayList<Media> list) {
 		Scanner scan = new Scanner(System.in);
 		//String attribute = scan.next();
 		System.out.println("What type are you searching?\n(F)iction\n(N)on-fiction");
-		String variable = scan.next();
-		switch (variable) {
-			case "F":
-				variable = "Fiction";
-				break;
-			case "N":
-				variable = "Non-fiction";
-				break;
-		}
-		for (Media media : library) {
-			if (media.getType().equals(variable) ) {
-				System.out.println(media);
-			}
-		}
+		searchType(scan.next(), list);
 		scan.close();
+		return list;
 	}
 	
 	
